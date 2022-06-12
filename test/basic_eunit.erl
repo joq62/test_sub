@@ -23,10 +23,10 @@
 %% Returns: List({HostId,Ip,SshPort,Uid,Pwd}
 %% --------------------------------------------------------------------
 start()->
-    ok=application:start(test_sub),
+    ok=test_sub_server:appl_start([]),
     pong=test_sub_server:ping(),
     42=test_sub_server:sub(62,20),
-%    init:stop(),
+    init:stop(),
     ok.
 
 setup()->
