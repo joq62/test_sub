@@ -7,7 +7,7 @@
 %%% 
 %%% Created : 10 dec 2012
 %%% -------------------------------------------------------------------
--module(test_sub_server).  
+-module(test_sub).  
 
 -behaviour(gen_server). 
 
@@ -45,7 +45,7 @@
 %% External functions
 %% ====================================================================
 appl_start([])->
-    application:start(test_sub).
+    application:start(?MODULE).
 
 %% ====================================================================
 %% Server functions

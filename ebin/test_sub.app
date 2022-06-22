@@ -5,6 +5,6 @@
               {mod,{test_sub_app,[]}},
               {applications,[kernel,stdlib]},
               {env,[]},
-              {modules,[test_sub_app,test_sub_server,test_sub_sup]},
+              {modules,[test_sub,test_sub_app,test_sub_sup]},
               {licenses,["Apache 2.0"]},
               {links,[]}]}.
